@@ -1,0 +1,101 @@
+svg:not(:root) {
+	overflow:hidden;
+} 
+
+hr { float:none;}
+
+img { 
+	display:block;
+	margin:auto;
+}
+
+body {
+	line-height: 110%;
+	font-family: "Source Sans Pro";
+	background-color: #FFF;
+	margin: 20px ;
+}
+h1 { 
+	text-align: center;
+	float:none;
+	border:10px;
+	margin: 30px 20px 20px; 
+}
+h2 { 
+	text-align: left;
+	float:none;
+	border:10px;
+	margin: 30px 0px 20px; 
+}
+
+p {
+	text-align: justify;
+	line-height: 130%;
+	font-size:110%;
+}
+
+ul { 
+	display: inline-block;
+	list-style-type: none;
+	border: 0px ;
+	margin: 10px;
+}
+ul a { 
+	text-decoration:none;
+}
+ul a:hover { text-decoration:underline; }
+
+a {	color: inherit;}
+
+code {
+	background-color: #EFF0F1;
+}
+
+.horiz_li {
+	float:left;
+	padding: 0px 10px;
+}
+.vert_li {
+	padding: 5px 10px;
+}
+
+.footertext {
+	font-style:italic;
+}
+.codechunk {
+	background-color: #EFF0F1;
+	margin:10px 10px;
+	padding:10px;
+}
+.livegraph {
+	margin:10px;
+}
+#math_fig {
+	width: 350px;
+}
+
+#formula {
+	width: 250px;
+}
+
+#sidebar {
+	display:inline-block;
+	float:left;
+}
+
+#sidebar ul {
+	padding:0px;
+}
+
+#focusedMDS_content {
+	display:inline-block;
+	float:initial;
+	width:720px;
+}
+
+#nav_bar ul {
+	padding: 0px;
+}
+#nav_bar li {
+	font-weight:bold;
+}
