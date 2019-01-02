@@ -1,45 +1,64 @@
-<!doctype html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Cerulean 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20131223
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
-	<link rel="stylesheet" type="text/css" href="focusedMDS.css">
-	
-	<title>Focused MDS</title> 
-	
-	<script src="https://d3js.org/d3.v4.min.js"></script>
-	<script src="lib/optimize_js/optimize_for_javascript.js" type="text/javascript"></script>
-	<script src="focusedMDS_showcase.js" type="text/javascript"></script>
-	<script src="distnetR_showcase.js" type="text/javascript"></script>
-	
-	<script src="lib/irisdata.js" type="text/javascript"></script>
-	<script src="lib/majumderdata.js" type="text/javascript"></script>
-	<script src="lib/zeiseldata.js" type="text/javascript"></script>
-	<script src="lib/majumderDistnetData.js", type="text/javascript"></script>
-	
-	<script src="lib/distnet/call_pacer.js" type="text/javascript"></script>
-	<script src="lib/distnet/distnet.js" type="text/javascript"></script>
-	<script src="lib/distnet/simpleGraph.js" type="text/javascript"></script>
-	<script src="lib/distnet/distnet.css" type="text/css"></script>
-	<script src="lib/linked-charts/linked-charts.js" type="text/javascript"></script>
-	<script src="lib/distnet/style.css" type="text/css"></script> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="lib/optimize_js/optimize_for_javascript.js" type="text/javascript"></script>
+<script src="focusedMDS_showcase.js" type="text/javascript"></script>
+<script src="distnetR_showcase.js" type="text/javascript"></script>
+
+<script src="lib/irisdata.js" type="text/javascript"></script>
+<script src="lib/majumderdata.js" type="text/javascript"></script>
+<script src="lib/zeiseldata.js" type="text/javascript"></script>
+<script src="lib/majumderDistnetData.js", type="text/javascript"></script>
+
+<script src="lib/distnet/call_pacer.js" type="text/javascript"></script>
+<script src="lib/distnet/distnet.js" type="text/javascript"></script>
+<script src="lib/distnet/simpleGraph.js" type="text/javascript"></script>
+<script src="lib/distnet/distnet.css" type="text/css"></script>
+<script src="lib/linked-charts/linked-charts.js" type="text/javascript"></script>
+<script src="lib/distnet/style.css" type="text/css"></script> 
+
 </head>
+
 <body>
-		<ul class = "horizontal_menu">
-			<li class = "horiz_li"> <a href="https://lea-urpa.github.io/focusedMDS.html"><span>focusedMDS</span></a></li>
-			<li class = "horiz_li"><a href = 'https://lea-urpa.github.io/PaperSupplement.html'>Paper Supplement</a></li>
-			<li class = "horiz_li"><a href='https://lea-urpa.github.io/index.html'><span>About Author </span></a></li>
-		</ul>
-	<hr>
-	<div id="sidebar">
-		<ul class = "vertical_menu">
-			<li class = "vert_li"><a href = '#Introduction'>Introduction</a></li>
-			<li class = "vert_li"><a href = '#Tutorial'>Tutorial</a></li>
-		</ul>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<!-- <h1><span class="icon icon-cog"></span><a href="#">Website title?</a></h1> -->
+			<div id="menu">
+				<ul>
+					<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
+					<li><a href="https://lea-urpa.github.io/focusedMDS.html" accesskey="2" title="">focusedMDS</a></li>
+					<li><a href="https://lea-urpa.github.io/PaperSupplement.html" accesskey="3" title="">Paper Supplement</a></li>
+					<li><a href="https://lea-urpa.github.io/About.html" accesskey="4" title="">About Author</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
-	<div id = "focusedMDS_content">
+</div>
+<div class="wrapper">
+	<div id="one-column" class="container">
 		<h1> <a name="Introduction">Introduction</a></h1>
 		<p>Focused multidimensional scaling (<code>focusedMDS</code>) is a tool for visualizing the multidimensional data
 			 contained within a pairwise distance matrix. Many useful methods exist for visualizing structures in
@@ -71,12 +90,12 @@
 			between each new point and the points already plotted, given from the distance matrix, and the
 			distances on the 2D plane, <i>D<sub>ij</sub></i>. 
 		 </p>	
-		 <img class = "figure" id = "formula" src="stressfunction.png" alt="stressfunction">
+		 <img class = "figure" id = "formula" src="images/stressfunction.png" alt="stressfunction">
 		 <p>
 			This <i>stress</i> function is minimized iteratively for each new point, using a custom univariate
 			optimization function written in Javascript based on Brent's algorithm.
 		 </p>
-		 <img class = "figure" id= "math_fig" src="Fig4.png" alt="Figure3">
+		 <img class = "figure" id= "math_fig" src="images/Fig4.png" alt="Figure3">
 	 	
 		 <h2> <a name="Avail">Availability</a></h2>
 		 <p> The package is available on <span class = "link_underlined">
@@ -149,9 +168,32 @@
  			 convention the first id), fixed size of the plot (in pixels), number of background
  			 circles, and tolerance for the optimization function.
  		 </p>
-	 	<p class="footertext">October 2017 / Lea Urpa</p>
 	</div>
+</div>
+<div id="copyright" class="container">
+	<p>  Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+		<ul class="contact">
+            <li><a href="https://www.fimm.fi/en/research/groups/palotie" class="icon icon-user"><span>Linked In</span></a></li>
+            <li><a href="https://www.linkedin.com/in/leaurpa" class="icon icon-linkedin"><span>Linked In</span></a></li>
+            <li><a href="https://twitter.com/leaurpa" class="icon icon-twitter"><span>Twitter</span></a></li>
+		</ul>
+</div>
 </body>
+<!-- 
+		<ul class = "horizontal_menu">
+			<li class = "horiz_li"> <a href="https://lea-urpa.github.io/focusedMDS.html"><span>focusedMDS</span></a></li>
+			<li class = "horiz_li"><a href = 'https://lea-urpa.github.io/PaperSupplement.html'>Paper Supplement</a></li>
+			<li class = "horiz_li"><a href='https://lea-urpa.github.io/index.html'><span>About Author </span></a></li>
+		</ul>
+	<hr>
+	<div id="sidebar">
+		<ul class = "vertical_menu">
+			<li class = "vert_li"><a href = '#Introduction'>Introduction</a></li>
+			<li class = "vert_li"><a href = '#Tutorial'>Tutorial</a></li>
+		</ul>
+	</div>
+	<div id = "focusedMDS_content"> -->
+		
 <script>
 	// Need to call focused_mds separately the first time to give initial result,
 	// afterwards create_focusedMDS_plot calls it internally.	
