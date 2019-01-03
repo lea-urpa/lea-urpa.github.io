@@ -57,8 +57,9 @@ Released   : 20131223
 		</div>
 	</div>
 </div>
+
 <div class="wrapper">
-	<div id="one-column" class="container">
+	<div id="" class="tutorial">
 		<h1> <a name="Introduction">Introduction</a></h1>
 		<p>Focused multidimensional scaling (<code>focusedMDS</code>) is a tool for visualizing the multidimensional data
 			 contained within a pairwise distance matrix. Many useful methods exist for visualizing structures in
@@ -90,12 +91,12 @@ Released   : 20131223
 			between each new point and the points already plotted, given from the distance matrix, and the
 			distances on the 2D plane, <i>D<sub>ij</sub></i>. 
 		 </p>	
-		 <img class = "figure" id = "formula" src="images/stressfunction.png" alt="stressfunction">
+		 <img class = "image" id = "formula" src="images/stressfunction.png" alt="stressfunction">
 		 <p>
 			This <i>stress</i> function is minimized iteratively for each new point, using a custom univariate
 			optimization function written in Javascript based on Brent's algorithm.
 		 </p>
-		 <img class = "figure" id= "math_fig" src="images/Fig4.png" alt="Figure3">
+		 <img class = "image" id= "math_fig" src="images/Fig4.png" alt="Figure3">
 	 	
 		 <h2> <a name="Avail">Availability</a></h2>
 		 <p> The package is available on <span class = "link_underlined">
@@ -123,7 +124,7 @@ Released   : 20131223
  				focusedMDS(dists)<br>
  			 </code>
  		 </div>
- 		 <div class="livegraph" id="codex1"></div>
+ 		 <div class="figure" id="codex1"></div>
  		 <p>In the simplest case, we specify only the distance object. Colors are chosen from a
  			 sequential rainbow and labels are automatically assigned.</p> <p> Note we chose to 
  			 create the distance matrix using petal length, petal width, sepal length, and 
@@ -146,7 +147,7 @@ Released   : 20131223
  				 focusedMDS( dists, ids = names) <br>
  			</code>
  		</div>
- 		<div class="livegraph" id="codex2"></div>
+ 		<div class="figure" id="codex2"></div>
  		<p>Given a vector of characters indicating color categories, colors are automatically assigned.
  			 Note the vector must be the same length and in the same order as the column/row names in
  			  the distance matrix.
@@ -162,7 +163,7 @@ Released   : 20131223
  				focusedMDS(dists, ids = ids, colors = colorvector)<br>
  			</code>
  		</div>
- 		<div class="livegraph" id="codex3"></div>
+ 		<div class="figure" id="codex3"></div>
  		<p>Again, the ids vector must be in the same order as column/row names to label the points
  			 correctly. The function also has additional specifications for starting focus point (by
  			 convention the first id), fixed size of the plot (in pixels), number of background
@@ -170,6 +171,8 @@ Released   : 20131223
  		 </p>
 	</div>
 </div>
+
+
 <div id="copyright" class="container">
 	<p>  Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 		<ul class="contact">
@@ -179,6 +182,7 @@ Released   : 20131223
 		</ul>
 </div>
 </body>
+
 <!-- 
 		<ul class = "horizontal_menu">
 			<li class = "horiz_li"> <a href="https://lea-urpa.github.io/focusedMDS.html"><span>focusedMDS</span></a></li>
